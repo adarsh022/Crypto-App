@@ -25,8 +25,9 @@ const News = ({ simplified }) => {
   return (
     <>
       {!simplified && (
-        <Col span={24}>
+        <Col span={24} className='search-crypto'>
           <Select
+            style={{ width: '100%' }}
             showSearch
             className='select-news'
             placeholder='Select a Crypto'
